@@ -4,15 +4,17 @@ public void setup()
 }
 public void draw()
 {
+  background(0);
   sierpinski(0,800,800);
 }
 public void mouseDragged()//optional
 {
-
+  
 }
 public void sierpinski(int x, int y, int len) 
 {
-  fill(0);
+  noStroke();
+  fill(0,255,0);
   if(len<=20){
     triangle(x,y,x+len,y,x+len/2,y-len);
   }
