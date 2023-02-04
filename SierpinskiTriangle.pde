@@ -14,7 +14,7 @@ public void mouseDragged()//optional
 public void sierpinski(int x, int y, int len) 
 {
   noStroke();
-  fill(0,255,0);
+  fill((int)(Math.random()*255));
   if(len<=20){
     triangle(x,y,x+len,y,x+len/2,y-len);
   }
